@@ -10,9 +10,9 @@ import React from "react"
 import SEO from "../components/seo"
 import Header from "./header"
 import Aside from "./aside"
-import Footer from "./footer"
+import Footerindex from "./footerindex"
 
-const Layout = ({ children }) => {
+const Layoutindex = ({ children }) => {
   return (
     <div className="container">
       <SEO title="Home" />
@@ -21,9 +21,9 @@ const Layout = ({ children }) => {
         <Aside />
         {children}
       </main>
-      <Footer />
+      <Footerindex />
     </div>
   )
 }
 
-export default Layout
+export default Layoutindex
