@@ -1,9 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const Mecenat = () => (
   <Layout>
+    <SEO title="Zostań mecenasem!" />
     <article>
       <h2>Zostań mecenasem!</h2>
 

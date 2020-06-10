@@ -1,8 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const FestungBreslau = () => (
   <Layout>
+    <SEO title="Festung Breslau" />
     <article>
       <h2>Festung Breslau</h2>
 

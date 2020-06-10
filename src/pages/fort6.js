@@ -2,11 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-// import GatsbyImage from "gatsby-image"
+import SEO from "../components/seo"
 
 export default function Fort6({ data }) {
   return (
     <Layout>
+      <SEO title="Fort 6" />
       <article>
         <h2>Fort 6</h2>
 
@@ -166,12 +167,12 @@ export default function Fort6({ data }) {
   )
 }
 
-export const query = graphql`
+export const pageQuery = graphql`
   query {
     fort: file(relativePath: { eq: "fort.jpg" }) {
       id
       childImageSharp {
-        fixed(width: 700) {
+        fixed(width: 600) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -181,7 +182,7 @@ export const query = graphql`
     ) {
       id
       childImageSharp {
-        fixed(width: 700) {
+        fixed(width: 600) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -189,7 +190,7 @@ export const query = graphql`
     pozycjaStrzelecka: file(relativePath: { eq: "pozycja-strzelecka.jpg" }) {
       id
       childImageSharp {
-        fixed(width: 700) {
+        fixed(width: 600) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -199,7 +200,7 @@ export const query = graphql`
     ) {
       id
       childImageSharp {
-        fixed(width: 700) {
+        fixed(width: 600) {
           ...GatsbyImageSharpFixed
         }
       }

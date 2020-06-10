@@ -1,8 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const GRH609D = () => (
   <Layout>
+    <SEO title="GRH 609 Division" />
     <article>
       <h2>GRH 609 Division</h2>
 

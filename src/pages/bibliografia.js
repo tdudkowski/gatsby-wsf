@@ -1,8 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const Page = () => (
   <Layout>
+    <SEO title="Bilbliografia" />
     <article>
       <h2>Bilbliografia</h2>
       <p>

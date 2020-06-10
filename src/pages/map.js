@@ -1,8 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const Map = () => (
   <Layout>
+    <SEO title="Mapa obiektów fortyfikacyjnych" />
     <article>
       <h2>Mapa obiektów fortyfikacyjnych</h2>
       <section>

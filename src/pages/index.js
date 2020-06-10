@@ -1,8 +1,10 @@
 import React from "react"
 import Layoutindex from "../components/layoutindex"
+import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layoutindex>
+    <SEO title="Strona główna" />
     <article>
       <h2>Fort Wrocław: Fort Piechoty nr 6, Polanowice</h2>
       <h2>GPS: 51.164, 17.043</h2>

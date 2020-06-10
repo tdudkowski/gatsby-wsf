@@ -1,8 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const Slownik = () => (
   <Layout>
+    <SEO title="Słowniczek Forteczny" />
     <article>
       <h2>Słowniczek Forteczny</h2>
 
