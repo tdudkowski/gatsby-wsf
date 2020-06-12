@@ -376,3 +376,40 @@ p.cr a {
 p.cr a:hover {
   color: rgba(255, 255, 0, 0.9);
 }
+
+section.form form {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+}
+
+section.form form input,
+section.form textarea {
+  width: 100%;
+  line-height: 2rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+
+section.form form input:focus,
+section.form textarea:focus {
+  background-color: #dde;
+  border: 1px solid #998;
+}
+
+section.form span {
+  display: block;
+  margin-top: 1rem;
+}
+
+section.form > form > div > .btn {
+  display: inline-block;
+  flex-flow: row;
+  flex-direction: row;
+  width: 40%;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 6px;
+  margin: 0.5rem 1rem;
+  border: 1px solid #dde;
+}

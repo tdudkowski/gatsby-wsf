@@ -7,7 +7,34 @@ const ContactForm = () => (
     <SEO title="Formularz kontaktowy" />
     <article>
       <h2>Formularz kontaktowy</h2>
-      <section>TODO</section>
+      <section className="form">
+        <form
+          method="post"
+          action="https://formspree.io/xknqbzbn"
+          name="contact"
+        >
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
+          <label>
+            <span>Nadawca (opcjonalnie)</span>
+            <input type="text" name="name" id="name" />
+          </label>
+          <label>
+            <span>E-mail (opcjonalnie)</span>
+            <input type="email" name="_replyto" id="_replyto" />
+          </label>
+          <label>
+            <span>Wiadomość (wymagane)</span>
+            <textarea name="message" id="message" rows="5" required />
+          </label>
+          <div>
+            <button type="submit" className="btn">
+              Wyślij
+            </button>
+            <input type="reset" value="Wyczyść formularz" className="btn" />
+          </div>
+        </form>
+      </section>
     </article>
   </Layout>
 )
