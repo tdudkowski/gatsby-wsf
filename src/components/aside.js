@@ -3,7 +3,7 @@ import React from "react"
 
 const Aside = () => (
   <aside>
-    <h2>Infanterie Stellungen I.St.-6</h2>
+    <h2>Infanterie Werk 6</h2>
     <h3>Komendantura</h3>
     <ul>
       <li>

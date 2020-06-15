@@ -29,7 +29,7 @@ const Footerindex = () => (
         </p>
       </section>
       <section>
-        <h2>GPS: 51.164, 17.043</h2>
+        <h2>GPS: 51.164849, 17.043460</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.2055403740815!2d17.037805951380957!3d51.159999979479316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDA5JzM2LjAiTiAxN8KwMDInMjQuMCJF!5e0!3m2!1sen!2spl!4v1591552150796!5m2!1sen!2spl"
           title="maps-google"
