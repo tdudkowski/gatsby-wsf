@@ -9,55 +9,74 @@ const Blog = () => (
     <article>
       <h2>Blog</h2>
       <section>
-        <h3>Co jest jeszcze do zrobienia - po mojej stronie</h3>
+        <p>
+          <strong>Aktualizacja - zrobione:</strong>
+        </p>
         <ul>
           <li>
-            Responsywność, są rozdzielczości na których układ wygląda dość
-            dziwnie. Parę tygodni temu telefon wpadł mi w błoto i po długiej
-            sekwencji wydarzeń doprowadziło to do popsutego gniazda zasilania,
-            więc na jakiś czas nie mam jak testować działaniana urządzeniach
-            przenośnych inaczej jak symulacją w przeglądarce.
+            Obrazki: niespodziewany problem z obrazkami sam się rozwiązał po
+            wrzuceniu na Netlify, istnieje tylko na Githubie, który nie miał być
+            miejscem hostowania. W docelowym miejscu czyli tu, obrazki podane
+            zgodnie z instrukcją są wyświetlane zgodnie z instrukcją. Co nie
+            unieważnia uwagi, że można je lepiej ostylować -{" "}
+            <Link to="fort6">Fort 6</Link>. Ale to jest generalna uwaga co do
+            designu, więc ostatecznie ją kasuję. Serwowanie strony przez Githuba
+            wyłączam skoro jest niepotrzebne.
+          </li>
+          <li>Analityka: jest włączone Google Analytics.</li>
+          <li>Formularz kontaktowy, jest i działa.</li>
+          <li>
+            Mapa Strony: zainstalowane są dwa pluginy, zobaczymy, który będzie
+            lepiej się nadawał.
           </li>
           <li>
-            Dopracowanie wyglądu, sam nie jestem jakimś designerem, ale mogę
-            zrobić dobrą rzecz, tyle, że wymaga to czasu, napatrzenia się i nie
-            przychodzi w ciągu paru dni.
+            Zapewnienie utrzymania strony w razie wu: archiwum jest na githubie
+            (adres:{" "}
+            <a href="https://github.com/tdudkowski/gatsby-wsf">
+              github.com/tdudkowski/gatsby-wsf
+            </a>
+            ), Gatsby nie jest tak popularny jak WordPress, ale znalezienie
+            kogoś, kto się na tym zna nie jest takie trudne. Sklonować (z
+            mastera, nie gh-pages) i modyfikować stronę to żaden problem. Potem
+            tylko trzeba ją zahostować i skierować tam domenę.
           </li>
-          <li>SEO i analityka. Tu proponuję analytics.google.</li>
-          <li>
-            Formularz kontaktowy. Przydaje się, raz na ruski rok, ale serio,
-            bardzo się przydaje i zawsze robi dobre wrażenie jak jest.
-          </li>
+        </ul>
+
+        <h3>Co jest jeszcze do zrobienia - po mojej stronie</h3>
+
+        <p>Poprzednie wciąż do zrobienia w tym tygodniu:</p>
+
+        <ul>
           <li>
             <strong>Najważniejsze: </strong>
             Jakiś interfejs dla edytora do wprowadzania treści, konkretnie to
             dwóch rodzajów treści: newsów (coś jak blog, ale można użyć jakiejś
-            branżowej nazwy) i artykułów. Najlepiej WYSIWYG.
+            branżowej nazwy) i artykułów. Najlepiej WYSIWYG. Problem polega na
+            tym, że można zrobić to na kilka sposobów i trzeba je przetestować.
           </li>
           <li>
-            Zapewnienie utrzymania strony w razie wu: archiwum jest na githubie,
-            Gatsby nie jest jeszcze tak popularny jak WordPress, ale znalezienie
-            kogoś, kto się na tym zna nie jest takie trudne. Sklonować i
-            modyfikować stronę to żaden problem. Potem tylko trzeba ją
-            zahostować i skierować tam domenę.
+            Responsywność, są rozdzielczości na których układ wygląda dość
+            dziwnie. Z braku działającego telefonu na jakiś czas nie mam jak
+            testować działania na urządzeniach przenośnych inaczej jak symulacją
+            w przeglądarce.
           </li>
           <li>
-            Mapa Strony: tak naprawde przyda się jak już będą artykuły, ale już
-            teraz można o tym pomyśleć.
+            Dopracowanie wyglądu, sam nie jestem jakimś designerem, ale mogę
+            zrobić dobrą rzecz, tyle, że wymaga to czasu, napatrzenia się i nie
+            przychodzi w ciągu paru dni. Dotyczy to równiez tego jak osadzać
+            obrazki.
           </li>
           <li>
-            To jak mogą wyglądać umieszczone w treści zdjęcia jest w podstronie
-            - <Link to="fort6">Fort 6</Link>, ale nie jestem jakoś specjalnie z
-            tego zadowolony. Rzecz jest do dalszego przemyślenia. Umiesiłem je
-            też dlatego, żeby sprawdzić ewentualne opóźnienie ładowania strony.
-            Ale z tego co widać Gatsby sobie z tym radzi bardzo dobrze.
+            SEO. Zajmę się tym po przełączeniu domeny, ale na ile dobrze
+            rozumiem nie ścigamy się na lajki i oglądalność. Niemniej jednak
+            dobrze żeby zapytanie o "fortyfikacje Wrocław" kierowało na WSF.
+            Widzę, że Trasa Obiektów Militarnych Wrocławia i artykuł wiki
+            "Twierdza Wrocław 1890–1918" są na pierwszej stronie wyszukań.
+            Jestem wikipedystą i mogę zrobić poprawny link do WSF, bo jest to a
+            propos.
           </li>
         </ul>
-        <p>
-          Na tę chwilę to zostawiam w takim stanie jak jest. Od najbliższej
-          niedzieli zajmę się powyższymi brakami. Nie powinno mi to zająć więcej
-          jak 2 tygodnie.
-        </p>
+        <p></p>
       </section>
 
       <section>

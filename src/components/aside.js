@@ -48,6 +48,9 @@ const Aside = () => (
       <li>
         <Link to="map">Mapa obiektów fortyfikacyjnych</Link>
       </li>
+      <li>
+        <a href="https://www.youtube.com/user/fortwroclaw">WSF - YouTube</a>
+      </li>
     </ul>
     <h3>Komunikacje</h3>
     <ul>
@@ -55,7 +58,7 @@ const Aside = () => (
         <Link to="form">Formularz kontaktowy</Link>
       </li>
       <li>
-        <Link to="http://www.forum.fortwroclaw.pl/">Forum</Link>
+        <a href="http://www.forum.fortwroclaw.pl/">Forum</a>
       </li>
     </ul>
 

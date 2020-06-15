@@ -3,6 +3,7 @@ module.exports = {
     title: `Wrocławskie Stowarzyszenie Fortyfikacyjne`,
     description: `strona Stowarzyszenia`,
     author: `@gatsbyjs`,
+    siteUrl: `https://gatsby-wsf.netlify.app`,
   },
   pathPrefix: "/gatsby-wsf",
   plugins: [
@@ -51,6 +52,13 @@ module.exports = {
         head: false,
         // enable ip anonymization
         anonymize: true,
+      },
+    },
+    `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/standard-sitemap.xml`,
       },
     },
   ],

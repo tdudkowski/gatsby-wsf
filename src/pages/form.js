@@ -10,7 +10,8 @@ const ContactForm = () => (
       <section className="form">
         <form
           method="post"
-          action="https://formspree.io/xknqbzbn"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
           name="contact"
         >
           <input type="hidden" name="bot-field" />

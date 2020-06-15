@@ -21,7 +21,7 @@ const Mecenat = () => (
         wyjątkowym obiekcie stanowiącym część Festung Breslau.
       </p>
 
-      <h3>3 To właśnie wy możecie nam pomóc!</h3>
+      <h3>To właśnie wy możecie nam pomóc!</h3>
 
       <p>W jaki sposób?</p>
 
