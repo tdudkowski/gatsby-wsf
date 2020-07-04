@@ -13,6 +13,7 @@ p {
 ul {
   list-style-type: none;
   padding-left: 0;
+  margin: 0 1rem;
 }
 
 a {
@@ -50,11 +51,35 @@ header {
 }
 
 img {
-  /* margin-right: auto; */
   margin-left: 0;
   margin-right: auto;
-
   margin: 0.5rem;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: space-between;
+  /* width: 250px; */
+}
+
+.socialmedia a {
+  padding: 0;
+  margin: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.socialmedia a i {
+  font-size: 24px;
+  background-color: #eed;
+  color: #334;
+  padding: 5px 10px;
+  border-radius: 0 0 5px 5px;
+}
+
+.socialmedia a:hover i {
+  color: #eed;
+  background-color: #334;
+  transition-duration: 0.5s;
 }
 
 header h1 {
@@ -168,8 +193,18 @@ main article section {
   flex-direction: column;
 }
 
-article h2 {
-  margin: 1rem 2rem;
+article h2,
+article h3 {
+  margin-left: 1rem;
+}
+
+section > h3 {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+section > p {
+  margin: 0;
 }
 
 article iframe {
@@ -205,6 +240,17 @@ footer iframe {
   max-width: 100%;
 }
 
+@media (min-width: 450px) {
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .socialmedia {
+    box-shadow: 0 0 3px rgba(200, 200, 20, 0.6);
+  }
+}
+
 @media (min-width: 800px) {
   .container {
     /* flex-direction: ; */
@@ -213,15 +259,53 @@ footer iframe {
   header {
     flex-direction: row;
     justify-content: space-around;
+    position: relative;
+  }
+
+  header .socialmedia {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: -2.5rem;
+    margin-right: 5rem;
+    right: 0;
+    /* width: 8rem; */
+    border: 1px solid transparent;
+    color: #4d5d53;
+    border-radius: 0 0 5px 5px;
+    background-color: #dde;
+  }
+
+  header .socialmedia a {
+    font-size: 22px;
+    /* padding: 10px 0; */
+    flex: 1;
+    text-align: center;
+  }
+
+  header:hover .socialmedia {
+    border: 1px solid rgba(255, 255, 0, 0.568);
+    color: yellow;
+  }
+
+  header:hover .socialmedia a {
+    transition-duration: 0.5s;
+  }
+
+  header:hover .socialmedia a:hover {
+    background-color: rgba(200, 200, 200, 0.6);
+    color: #333;
   }
 
   main {
     flex-direction: row;
   }
 
-  aside {
+  main aside {
     flex-basis: 24rem;
     align-self: flex-start;
+    position: sticky;
+    top: 0;
   }
 
   .story {
@@ -309,14 +393,9 @@ footer iframe {
   background-color: #eef;
 }
 
-article h3,
-article h4 {
-  margin: 1rem;
-}
-
 article ul,
 article dl {
-  margin: 2rem 1rem;
+  /* margin: 2rem 1rem; */
   padding-left: 1rem;
   list-style-type: circle;
 }

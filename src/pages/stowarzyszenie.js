@@ -29,7 +29,7 @@ const Stowarzyszenie = () => (
 
       <p>10 kwietnia 2012 roku uzyskaliśmy numer REGON 021854154</p>
 
-      <h3>1 O Forcie Piechoty nr 6 na Polanowicach</h3>
+      <h3>O Forcie Piechoty nr 6 na Polanowicach</h3>
 
       <p>
         Objęty przez nas opieką fort to jedna z nielicznych ocalałych budowli
@@ -44,60 +44,98 @@ const Stowarzyszenie = () => (
         przywracając go do życia.
       </p>
 
-      <h3>2 Co nam się już udało?</h3>
+      <h3>Co nam się już udało?</h3>
 
       <p>
         Od samego początku działalności staramy się zrobić jak najwięcej.
         Dlatego możemy się pochwalić, że w ciągu kilku lat udało nam się:
       </p>
 
-      <p>
-        Zlikwidować zalegające teren fortu dzikie wysypisko śmieci. Z terenu
-        fortu wyjechało ponad 500 ton odpadów ! Samo zbieranie śmieci z terenu,
-        w jedno miejsce trwało dwa lata (2012-2014) i odbywało się głównie
-        ręcznie. Ogrodzić teren, przez co zapobiegliśmy dalszej dewastacji
-        budowli i drzewostanu. Teren został ogrodzony 14 – 15 czerwca 2013 roku.
-        Rozpocząć remont wnętrza schronu głównego, dotychczas zostały
-        wyremontowane cztery z sześciu kazamat oraz latryna. Remont wymagał
-        usunięcia setek ton gruzu i śmieci, ściągnięcia kilku zniszczonych
-        powłok malarskich z setek metrów kwadratowych ścian. W wielu miejscach
-        trzeba było odtworzyć powierzchnię podłóg i ścian. Rozpocząć
-        wprowadzanie w schronie głównym odtworzonych detali pierwotnego
-        wyposażenia. Oczyścić 180 ze 190 metrów betonowej pozycji strzeleckiej.
-        Polegało to nie tylko na wyniesieniu z tego unikalnego obiektu śmieci i
-        gruzu, ale także na wyniesieniu zalegającej w budowli warstwy ziemi.
-        Udrożnić i oczyścić system odwodnienia całego fortu. Odwodnienie dzieła,
-        nie było po 1945 obiektem żadnej troski, co powodowało wylewanie stawów
-        przy roztopach, oraz zalewanie wartowni fortu. Udrożnienie zwłaszcza
-        przepustu pod groblą, spowodowało rozwiązanie tego problemu. Już na
-        etapie usuwania śmieci z obiektu rozpoczęliśmy intensywne prace
-        zmierzające do przywrócenia pierwotnego poziomu gruntu oraz odbudowy
-        zniszczonych form ziemnych fortu. Prace te zaczęły nabierać tempa na
-        wiosnę 2014 roku, i trwają w niektórych miejscach do dzisiaj.
-      </p>
-      <p>
-        Przywróciliśmy pierwotny układ wałów fortu w części szyjowej (od strony
-        miasta), wał szyi był poważnie zniekształcony, na skutek próby zasypania
-        jednego ze stawu odpadami rolnymi. Umożliwiliśmy turystyczne korzystanie
-        z fortu, oraz organizowanie zwiedzania w większych grupach, poprzez
-        udrożnienie wyjść w obu przedsionkach schronu głównego. Uruchomiliśmy
-        ogrzewanie obiektu, zaczynając od jednego punktu grzewczego w schronie
-        głównym. Obecnie ogrzewanych jest pięć pomieszczeń, w schronie głównym,
-        oraz jeden schron pogotowia. Doprowadziliśmy do fortu prąd elektryczny,
-        przez co zniknęła uciążliwa konieczność posługiwania się przy zwiedzaniu
-        latarką. Wyremontowaliśmy wnętrze wartowni fortu, budowla ta do 2013
-        roku, była przez większość czasu zalana wodami gruntowymi, zasypana
-        śmieciami i wielokrotnie podpalana. W roku 2016 odtworzyliśmy działającą
-        wentylację mechaniczną w schronie głównym, co ma kapitalny wpływ na
-        osuszanie wnętrza obiektu. Udrożniliśmy zasypane ziemią i odpadami
-        przewody grawitacyjnej wentylacji w schronach pogotowia i schronie
-        głównym. Ma to znaczący wpływ na zachowanie odpowiedniego poziomu
-        wilgotności w obiektach. Udrożniliśmy i odtworzyliśmy system rur
-        głosowych między schronami pogotowia i między schronem pogotowia nr 1 i
-        stanowiskiem obserwacyjnym. W roku 2017 zostanie odtworzona łączność
-        akustyczna między schronem głównym a schron pogotowia nr 1. Jest to
-        jedyny działający tego typu system w naszym kraju.
-      </p>
+      <ul>
+        <li>
+          Zlikwidować zalegające teren fortu dzikie wysypisko śmieci. Z terenu
+          fortu wyjechało ponad 500 ton odpadów ! Samo zbieranie śmieci z
+          terenu, w jedno miejsce trwało dwa lata (2012-2014) i odbywało się
+          głównie ręcznie.
+        </li>
+        <li>
+          Ogrodzić teren, przez co zapobiegliśmy dalszej dewastacji budowli i
+          drzewostanu. Teren został ogrodzony 14 – 15 czerwca 2013 roku.
+        </li>
+        <li>
+          Rozpocząć remont wnętrza schronu głównego, dotychczas zostały
+          wyremontowane cztery z sześciu kazamat oraz latryna. Remont wymagał
+          usunięcia setek ton gruzu i śmieci, ściągnięcia kilku zniszczonych
+          powłok malarskich z setek metrów kwadratowych ścian. W wielu miejscach
+          trzeba było odtworzyć powierzchnię podłóg i ścian.
+        </li>
+        <li>
+          Rozpocząć wprowadzanie w schronie głównym odtworzonych detali
+          pierwotnego wyposażenia.
+        </li>
+        <li>
+          Oczyścić 180 ze 190 metrów betonowej pozycji strzeleckiej. Polegało to
+          nie tylko na wyniesieniu z tego unikalnego obiektu śmieci i gruzu, ale
+          także na wyniesieniu zalegającej w budowli warstwy ziemi.
+        </li>
+        <li>
+          Udrożnić i oczyścić system odwodnienia całego fortu. Odwodnienie
+          dzieła, nie było po 1945 obiektem żadnej troski, co powodowało
+          wylewanie stawów przy roztopach, oraz zalewanie wartowni fortu.
+          Udrożnienie zwłaszcza przepustu pod groblą, spowodowało rozwiązanie
+          tego problemu.
+        </li>
+        <li>
+          Już na etapie usuwania śmieci z obiektu rozpoczęliśmy intensywne prace
+          zmierzające do przywrócenia pierwotnego poziomu gruntu oraz odbudowy
+          zniszczonych form ziemnych fortu. Prace te zaczęły nabierać tempa na
+          wiosnę 2014 roku, i trwają w niektórych miejscach do dzisiaj.
+        </li>
+        <li>
+          Przywróciliśmy pierwotny układ wałów fortu w części szyjowej (od
+          strony miasta), wał szyi był poważnie zniekształcony, na skutek próby
+          zasypania jednego ze stawu odpadami rolnymi.
+        </li>
+        <li>
+          Umożliwiliśmy turystyczne korzystanie z fortu, oraz organizowanie
+          zwiedzania w większych grupach, poprzez udrożnienie wyjść w obu
+          przedsionkach schronu głównego.
+        </li>
+        <li>
+          Uruchomiliśmy ogrzewanie obiektu, zaczynając od jednego punktu
+          grzewczego w schronie głównym. Obecnie ogrzewanych jest pięć
+          pomieszczeń, w schronie głównym, oraz jeden schron pogotowia.
+        </li>
+        <li>
+          Doprowadziliśmy do fortu prąd elektryczny, przez co zniknęła uciążliwa
+          konieczność posługiwania się przy zwiedzaniu latarką.
+        </li>
+        <li>
+          Wyremontowaliśmy wnętrze wartowni fortu, budowla ta do 2013 roku, była
+          przez większość czasu zalana wodami gruntowymi, zasypana śmieciami i
+          wielokrotnie podpalana.
+        </li>
+        <li>
+          W roku 2016 odtworzyliśmy działającą wentylację mechaniczną w schronie
+          głównym, co ma kapitalny wpływ na osuszanie wnętrza obiektu.
+        </li>
+        <li>
+          Udrożniliśmy zasypane ziemią i odpadami przewody grawitacyjnej
+          wentylacji w schronach pogotowia i schronie głównym. Ma to znaczący
+          wpływ na zachowanie odpowiedniego poziomu wilgotności w obiektach.
+        </li>
+        <li>
+          Udrożniliśmy i odtworzyliśmy system rur głosowych między schronami
+          pogotowia i między schronem pogotowia nr 1 i stanowiskiem
+          obserwacyjnym.
+        </li>
+        <li>
+          W roku 2017 zostanie odtworzona łączność akustyczna między schronem
+          głównym a schronem pogotowia nr 1. Jest to jedyny działający tego typu
+          system w naszym kraju.
+        </li>
+      </ul>
+
       <p>
         Dzięki uratowaniu przygotowanych do złomowania części, przystąpiliśmy do
         odbudowy jednego z trzech zachowanych w Polsce stanowiska obserwacyjnego
@@ -106,7 +144,7 @@ const Stowarzyszenie = () => (
         zrobione tylko dzięki społecznej postawie naszych członków, sympatyków i
         wolontariuszy. Wiele jeszcze jest do zrobienia.
       </p>
-      <h3>3 To właśnie wy możecie nam pomóc!</h3>
+      <h3>To właśnie wy możecie nam pomóc!</h3>
 
       <p>W jaki sposób?</p>
 
@@ -133,7 +171,7 @@ const Stowarzyszenie = () => (
         TYTUŁ PRZELEWU: Darowizna na cele statutowe
       </blockquote>
 
-      <h3>4 Co chcielibyśmy osiągnąć?</h3>
+      <h3>Co chcielibyśmy osiągnąć?</h3>
 
       <p>
         Odbudować kratę forteczną, skradzioną przez złomiarzy w latach 1996 –

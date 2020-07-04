@@ -1,11 +1,16 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Helmet } from "react-helmet"
 
 const Page = () => (
   <Layout>
     <SEO title="Bilbliografia" />
     <article>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Bilbliografia</title>
+      </Helmet>
       <h2>Bilbliografia</h2>
       <p>
         Twierdza Wrocław fascynowała i inspirowała wielu badaczy i autorów.

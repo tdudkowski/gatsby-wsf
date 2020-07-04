@@ -7,7 +7,6 @@
 
 import React from "react"
 
-import SEO from "../components/seo"
 import Header from "./header"
 import Aside from "./aside"
 import Footer from "./footer"
@@ -15,7 +14,6 @@ import Footer from "./footer"
 const Layout = ({ children }) => {
   return (
     <div className="container">
-      <SEO title="Home" />
       <Header />
       <main>
         <Aside />

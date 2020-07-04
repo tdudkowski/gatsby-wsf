@@ -7,7 +7,6 @@
 
 import React from "react"
 
-import SEO from "../components/seo"
 import Header from "./header"
 import Aside from "./aside"
 import Footerindex from "./footerindex"
@@ -15,7 +14,6 @@ import Footerindex from "./footerindex"
 const Layoutindex = ({ children }) => {
   return (
     <div className="container">
-      <SEO title="Home" />
       <Header />
       <main>
         <Aside />
