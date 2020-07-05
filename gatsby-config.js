@@ -91,5 +91,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-netlify-cache",
+    `gatsby-transformer-xml`,
   ],
 }

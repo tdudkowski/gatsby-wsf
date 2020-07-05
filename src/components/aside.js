@@ -40,13 +40,15 @@ const Aside = () => (
         <Link to="bibliografia">Bibliografia</Link>
       </li>
       <li>
-        <Link to="oc">Luftschutz / Obrona Cywilna</Link>
+        <Link to="luftschutz-obrona-cywilna">Luftschutz / Obrona Cywilna</Link>
       </li>
       <li>
         <Link to="slownik">Słowniczek forteczny</Link>
       </li>
       <li>
-        <Link to="map">Mapa obiektów fortyfikacyjnych</Link>
+        <Link to="mapa-obiektow-fortyfikacyjnych">
+          Mapa obiektów fortyfikacyjnych
+        </Link>
       </li>
       <li>
         <a href="https://www.youtube.com/user/fortwroclaw">WSF - YouTube</a>
@@ -55,7 +57,7 @@ const Aside = () => (
     <h3>Komunikacje</h3>
     <ul>
       <li>
-        <Link to="form">Formularz kontaktowy</Link>
+        <Link to="formularz-kontaktowy">Formularz kontaktowy</Link>
       </li>
       <li>
         <a href="http://www.forum.fortwroclaw.pl/">Forum</a>
