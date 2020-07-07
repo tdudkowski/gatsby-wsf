@@ -8,8 +8,41 @@ const Blog = () => (
     <SEO title="Blog" />
     <article>
       <h2>Blog</h2>
-      <h3>Aktualizacja #3 (2020-07-04):</h3>
+      <h3>Aktualizacja #3 (2020-07-07):</h3>
       <section>
+        <p>
+          Wszystko co jest zrobione wymieniłem poniżej. Tak samo rzeczy, które
+          sa do zrobienia. Ale tu poza dwoma wyjątkami, są to sprawy do
+          zrobienia po przekierowaniu domeny (SEO), lub niekrytyczne (jak np
+          dopasowania RWD). Te dwa wyjątki to ostatnie dwa blokery, z czego tak
+          naprawdę tylko pierwszy ma znaczenie:
+        </p>
+        <ul>
+          <li>
+            Dopracowanie treści strony, aktualizacja niektórych sformułowań,
+            drobne korekty. Można to zrobić w przysłowiową godzinę. Mogę
+            przyjechać z laptopem i oporządzimy tekst strona po stronie.
+            Ustalimy gdzie maja być które zdjęcia i opisy do nich. Wystarczy
+            jeżeli będzie prąd (bateria działa ok godziny), internet mi jest
+            potrzebny tylko do wypchnięcia tego na Githuba.
+          </li>
+          <li>
+            Interfejs do wprowadzania danych, czyli edytor WYSIWYG. Tu niestety
+            jestem ograniczony tym, że jedynym sensownym rozwiązaniem jest
+            Strapi, który wymaga serwera Node.js. Mogę taki serwer uruchomić u
+            siebie na komputerze, ale na dotychczasowym hostingu go nie mam.
+            Ponieważ jednak jest to must-have w lipcu przenoszę się na inny
+            hosting gdzie taka usługa jest dostępna. Więc w tym miesiącu powinno
+            już działać.
+          </li>
+        </ul>
+
+        <p>
+          Nawet jednak bez tego edytora WYSIWYG już po ustaleniu tekstu, jest to
+          lepsza strona niż to co jest obecnie. Więc wtedy będzie można
+          przekierować domenę i zacząć zbierać opinie i życzenia użytkowników.
+        </p>
+
         <h3>Zrobione</h3>
         <ul>
           <li>
@@ -23,8 +56,8 @@ const Blog = () => (
             na miesiąc.
           </li>
           <li>
-            Mapa Strony: zainstalowane są dwa pluginy, ale póki co efekt strony{" "}
-            <Link to={404}>404</Link> mnie nie zadowala.
+            Mapa Strony: zainstalowane są dwa pluginy, strona{" "}
+            <Link to="404">404</Link> mnie nie zadowala.
           </li>
           <li>
             Zapewnienie utrzymania strony w razie wu: archiwum jest na githubie
@@ -76,6 +109,10 @@ const Blog = () => (
             1890–1918" są na pierwszej stronie wyszukań. Jestem wikipedystą i
             mogę zrobić poprawny link do WSF, bo jest to a propos. Trzeba mieć
             tylko jakieś publikacje, artykuły w mediach.
+          </li>
+          <li>
+            Zrobienie dokumentacji, czyli jakich narzędzi użyłem, z jakich usług
+            strona korzysta itp
           </li>
         </ul>
       </section>
