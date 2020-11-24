@@ -57,7 +57,7 @@ const Blog = () => (
           </li>
           <li>
             Mapa Strony: zainstalowane są dwa pluginy, strona{" "}
-            <Link to="404">404</Link> mnie nie zadowala.
+            <Link to="/404">404</Link> mnie nie zadowala.
           </li>
           <li>
             Zapewnienie utrzymania strony w razie wu: archiwum jest na githubie

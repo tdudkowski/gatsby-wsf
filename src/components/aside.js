@@ -1,85 +1,103 @@
-import { Link } from "gatsby"
-import React from "react"
+// src https://snopkowski.com/blog/gatsby-navigation-styled-components
+import React, { useState } from "react"
+import NavbarLinks from "./navbarlinks"
+// import Logo from "./Logo"
+import styled from "styled-components"
 
-const Aside = () => (
-  <aside>
-    <h2>Infanterie Werk 6</h2>
-    <h3>Komendantura</h3>
-    <ul>
-      <li>
-        <Link to="/">Strona główna</Link>
-      </li>
-      <li>
-        <Link to="blog">Wydarzenia</Link>
-      </li>
-      <li>
-        <Link to="stowarzyszenie">Stowarzyszenie</Link>
-      </li>
-    </ul>
-    <h3>Załoga</h3>
-    <ul>
-      <li>
-        <Link to="bohaterowie">Bohaterowie</Link>
-      </li>
-      <li>
-        <Link to="landsturm">Landsturm</Link>
-      </li>
-      <li>
-        <Link to="grh609d">GRH 609 Division</Link>
-      </li>
-    </ul>
-    <h3>Archiwum Fortu</h3>
-    <ul>
-      <li>
-        <Link to="fort6">Fort Piechoty nr 6</Link>
-      </li>
-      <li>
-        <Link to="festung-breslau">Festung Breslau</Link>
-      </li>
-      <li>
-        <Link to="bibliografia">Bibliografia</Link>
-      </li>
-      <li>
-        <Link to="luftschutz-obrona-cywilna">Luftschutz / Obrona Cywilna</Link>
-      </li>
-      <li>
-        <Link to="slownik">Słowniczek forteczny</Link>
-      </li>
-      <li>
-        <Link to="mapa-obiektow-fortyfikacyjnych">
-          Mapa obiektów fortyfikacyjnych
-        </Link>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/user/fortwroclaw">WSF - YouTube</a>
-      </li>
-    </ul>
-    <h3>Komunikacje</h3>
-    <ul>
-      <li>
-        <Link to="formularz-kontaktowy">Formularz kontaktowy</Link>
-      </li>
-      <li>
-        <a href="http://www.forum.fortwroclaw.pl/">Forum</a>
-      </li>
-    </ul>
+const Navigation = styled.nav`
+  @media (max-width: 768px) {
+    position: absolute;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    /* background-color:#fff; */
+    background-color: rgba(250, 250, 250, 0.4);
+  }
+`
 
-    <section class="hero">
-      <p>
-        Zalajkuj nasz profil i śledź informacje:
-        <br />
-        <a href="https://www.facebook.com/fortwroclaw/" class="facebook">
-          <i class="fa fa-facebook-official" aria-hidden="true"></i>
-          fb.com/fortwroclaw
-        </a>
-      </p>
+const Toggle = styled.div`
+  display: none;
+  height: 100%;
+  cursor: pointer;
+  padding: 0 10vw;
 
-      <hr />
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`
 
-      <p>Wsparcie</p>
-      <Link to="mecenat">Zostań mecenasem</Link>
-    </section>
-  </aside>
-)
+const Navbox = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
+  @media (max-width: 768px) {
+    position: absolute;
+    /* top: 2rem; */
+    width: 100%;
+    justify-content: flex-start;
+    transition: all 0.3s ease-in;
+    left: ${props => (props.open ? "-100%" : "0")};
+  }
+`
+
+const Hamburger = styled.div`
+  background-color: #111;
+  width: 30px;
+  height: 3px;
+  transition: all 0.3s linear;
+  align-self: center;
+  position: relative;
+  transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
+
+  ::before,
+  ::after {
+    width: 30px;
+    height: 3px;
+    background-color: #111;
+    content: "";
+    position: absolute;
+    transition: all 0.3s linear;
+  }
+
+  ::before {
+    transform: ${props =>
+      props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
+    top: -10px;
+  }
+
+  ::after {
+    opacity: ${props => (props.open ? "0" : "1")};
+    transform: ${props => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
+    top: 10px;
+  }
+`
+
+const Aside = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false)
+
+  return (
+    <aside className="menu-main">
+      <Navigation>
+        <Toggle
+          navbarOpen={navbarOpen}
+          onClick={() => setNavbarOpen(!navbarOpen)}
+        >
+          {navbarOpen ? <Hamburger open /> : <Hamburger />}
+        </Toggle>
+        {navbarOpen ? (
+          <Navbox>
+            <NavbarLinks />
+          </Navbox>
+        ) : (
+          <Navbox open>
+            <NavbarLinks />
+          </Navbox>
+        )}
+      </Navigation>
+    </aside>
+  )
+}
 export default Aside

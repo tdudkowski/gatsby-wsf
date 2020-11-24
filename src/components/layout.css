@@ -1,0 +1,18 @@
+.mobile-menu {
+  display: block;
+  background-color: #000;
+}
+.comp-menu {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .mobile-menu {
+    display: none;
+  }
+  .comp-menu {
+    display: block;
+    background-color: #000;
+    border: 10px solid black;
+  }
+}

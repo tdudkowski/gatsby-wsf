@@ -14,6 +14,7 @@ import Footerindex from "./footerindex"
 const Layoutindex = ({ children }) => {
   return (
     <div className="container">
+      <Aside />
       <Header />
       <main>
         <Aside />

@@ -9,7 +9,7 @@ const IndexPage = () => (
     <article>
       <h2>Fort Wrocław: Fort Piechoty nr 6, Polanowice</h2>
       <GPS />
-      <section class="story">
+      <section className="story">
         <div>
           <p>
             Odkryj tajemnice jednej z najważniejszych twierdz Rzeszy - FESTUNG
@@ -25,16 +25,16 @@ const IndexPage = () => (
         </div>
       </section>
       <hr />
-      <section class="facebook_section">
+      <section className="facebook_section">
         <iframe
           src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffortwroclaw%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
           title="facebook"
           width="340"
           height="500"
-          styleName="border: none; overflow: hidden;"
+          stylename={{ border: "none", overflow: "hidden" }}
           scrolling="no"
-          frameborder="0"
-          allowTransparency="true"
+          frameBorder="0"
+          allowtransparency="true"
           allow="encrypted-media"
         ></iframe>
         <div>

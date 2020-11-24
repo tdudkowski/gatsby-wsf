@@ -27,6 +27,7 @@ const Footer = () => (
           <br />
           REGON 021854154
           <br />
+          NIP 895-20-12-718
         </p>
       </section>
       <section>
@@ -36,25 +37,25 @@ const Footer = () => (
           title="facebook"
           width="340"
           height="500"
-          styleName="border: none; overflow: hidden;"
+          style={{ border: 'none', overflow: 'hidden' }}
           scrolling="no"
-          frameborder="0"
-          allowTransparency="true"
+          frameBorder="0"
+          allowtransparency="true"
           allow="encrypted-media"
         ></iframe>
       </section>
       <section>
         <h2>Lokalizacja</h2>
         <GPS />
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.2055403740815!2d17.037805951380957!3d51.159999979479316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDA5JzM2LjAiTiAxN8KwMDInMjQuMCJF!5e0!3m2!1sen!2spl!4v1591552150796!5m2!1sen!2spl"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2501.9423436054494!2d17.04127131561381!3d51.1648523435119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDA5JzUzLjUiTiAxN8KwMDInMzYuNSJF!5e0!3m2!1spl!2spl!4v1606211700517!5m2!1spl!2spl"
           title="maps-google"
           width="600"
           height="450"
-          frameborder="0"
-          allowfullscreen=""
+          frameBorder="0"
+          style={{ border: 0 }}
+          allowFullScreen=""
           aria-hidden="false"
-        ></iframe>
+          tabindex="0"></iframe>
       </section>
     </div>
     <hr />

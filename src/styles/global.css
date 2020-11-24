@@ -3,23 +3,33 @@ body {
   padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background: no-repeat url(../images/las1.jpg) fixed;
-  background-size: cover;
-  background-position: bottom left;
-}
+  background-size: 100vw;
+  background-position: right top;
+  color:#332;
+  }
 
 p {
   padding: 0.5rem 1rem;
+  margin: 0 2rem;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0 1rem;
-}
+article ul, article ol {
+ padding-left: 2rem;
+  margin: 0 3rem;
+  }
+
+  article ul {list-style-type: circle;}
+
+article dl {
+  text-align: justify;
+  margin: 1rem 2rem;
+  padding:1rem;
+  }
 
 a {
   text-decoration: none;
   outline: 0;
+  white-space: nowrap;
 }
 
 .no-link {
@@ -28,35 +38,27 @@ a {
 
 .container {
   box-sizing: border-box;
-  min-height: calc(100vh - 1rem);
+  min-height: calc(100vh);
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
-  background: no-repeat url(../images/fort-new.jpg);
-  background-size: cover;
-  background-position: left;
-  margin-top: 1rem;
-  border-radius: 1.6rem 1.6rem 0 0;
-  border-top: 1.5rem solid #222;
-  border-width: 1.5rem 0 0 0;
+  background: no-repeat url(../images/fort-new.jpg) fixed;
+  background-size: 100vw 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 header {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-items: flex-start;
   background-color: rgba(200, 200, 200, 0.8);
 }
 
 img {
-  margin-left: 0;
-  margin-right: auto;
-  margin: 0.5rem;
+  max-width:100%;
+   margin: 0.5rem;
 }
 
 .socialmedia {
@@ -108,78 +110,9 @@ main {
   flex-direction: column;
 }
 
-aside {
-  background: no-repeat url("../images/map1942-rozmycie.jpg");
-  background-size: cover;
-  z-index: 1;
-  position: relative;
-}
-
-aside::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 90%;
-  border-right: 5px dotted #999;
-  z-index: -10;
-}
-
-aside ul {
-  margin: 0;
-  padding-left: 2rem;
-}
-
-aside a {
-  display: block;
-  color: #333;
-  padding: 0.3rem;
-  user-select: none;
-  font-size: 1.2rem;
-  font-weight: normal;
-}
-
-aside a:hover {
-  text-decoration: underline;
-}
-
-aside ul,
-aside h2,
-aside h3 {
-  font-family: "Germania One", cursive;
-}
-
-aside h2 {
-  display: block;
-  text-align: center;
-  /* font-size: 1.2rem; */
-  font-weight: normal;
-  background-color: #fff;
-  margin: 0 5px 1rem 5px;
-  padding: 0.5rem;
-  border: 1px solid gray;
-}
-
-aside h3 {
-  display: block;
-  text-align: right;
-  font-size: 1.3rem;
-  background-color: rgba(255, 255, 255, 0.3);
-  font-weight: normal;
-  margin: 0;
-  padding: 0.5rem;
-  padding-right: 2rem;
-  border: 1px solid #ddd;
-  border-width: 1px 0;
-}
-
-main {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
 main article {
-  background-color: rgba(200, 200, 200, 0.8);
+  background-color: rgba(200, 200, 200, 0.9);
+  padding-bottom: 3rem;
 }
 
 main hr {
@@ -198,7 +131,7 @@ main article section {
 
 article h2,
 article h3 {
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 
 section > h3 {
@@ -243,6 +176,70 @@ footer iframe {
   max-width: 100%;
 }
 
+div.container > aside.menu-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 8vh;
+  height: 100%;
+  background: no-repeat url("../images/map1942-rozmycie.jpg");
+  background-size: cover;
+  /* background-color: #fff; */
+  z-index: 100;
+}
+
+main > aside.menu-main {
+  display: none;
+}
+div.container > aside.menu-main > nav > div:nth-of-type(2) {
+  background: no-repeat url("../images/map1942-rozmycie.jpg");
+  background-size: cover;
+  background-color: #fff;
+}
+
+div.container > aside.menu-main > nav > div:nth-of-type(2) ul,
+div.container > aside.menu-main > nav > div:nth-of-type(2) h3 {
+  font-size: 1.6rem;
+  background: no-repeat url("../images/map1942-rozmycie.jpg");
+  background-size: cover;
+  background-color: #fff;
+}
+
+aside h2,
+aside .hero {
+  display: none;
+}
+
+/* aside nav div, */
+aside nav h3,
+aside nav ul {
+  margin: 0;
+  /* display: flex; */
+}
+
+aside nav h3 {
+  border: 1px solid rgba(51, 51, 51, 0.4);
+  border-width: 1px 0;
+  text-align: center;
+}
+
+aside nav ul li a {
+  padding: 0.5rem;
+  display: block;
+}
+
+aside.menu-main ul li a,
+aside h2,
+aside h3 {
+  font-family: "Germania One", cursive;
+  /* background-color: #fff; */
+}
+
+aside nav ul li a:hover {
+  /* background-color: #ddc; */
+  background-color: rgba(250, 250, 250, 0.3);
+  text-decoration: underline;
+}
+
 @media (min-width: 450px) {
   header {
     flex-direction: row;
@@ -255,8 +252,22 @@ footer iframe {
 }
 
 @media (min-width: 800px) {
+  body {
+  }
+
   .container {
     /* flex-direction: ; */
+    margin-top: 1rem;
+    border-radius: 1.6rem 1.6rem 0 0;
+    border-top: 1.5rem solid #222;
+    border-width: 1.5rem 0 0 0;
+  }
+
+  div.container > aside.menu-main {
+    display: none;
+  }
+  main > aside.menu-main {
+    display: block;
   }
 
   header {
@@ -305,10 +316,86 @@ footer iframe {
   }
 
   main aside {
-    flex-basis: 22rem;
+    flex-basis: 19rem;
     align-self: flex-start;
     position: sticky;
     top: 0;
+  }
+
+  aside {
+    background-image: url("../images/map1942-rozmycie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    width: 100%;
+  }
+
+  aside::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 90%;
+    border-right: 5px dotted #999;
+    z-index: -10;
+  }
+
+  aside ul {
+    margin: 0;
+    padding-left: 2rem;
+    list-style-type: none;
+  }
+
+  aside a {
+    display: block;
+    color: #333;
+    padding: 0.3rem;
+    user-select: none;
+    font-size: 1.2rem;
+    font-weight: normal;
+  }
+
+  aside a:hover {
+    text-decoration: underline;
+  }
+
+  aside h2 {
+    display: block;
+    text-align: center;
+    /* font-size: 1.2rem; */
+    font-weight: normal;
+    background-color: #fff;
+    margin: 0 5px 1rem 5px;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    margin:.5rem 1rem;
+  }
+
+  aside h3 {
+    display: block;
+    text-align: right;
+    font-size: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: normal;
+    margin: 0;
+    padding: 0.5rem;
+    padding-right: 2rem;
+    border: 1px solid #ddd;
+    border-width: 1px 0;
+  }
+
+  aside .hero {
+    display: block;
+    background-color: rgba(221, 221, 238, 0.5);
+    border: 1px solid #4d5d53;
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+
+  .hero p {
+    margin: 0;
+    padding: 0 0.5rem;
+    font-size: 1rem;
   }
 
   .story {
@@ -349,19 +436,6 @@ footer iframe {
   }
 }
 
-.hero {
-  background-color: rgba(221, 221, 238, 0.5);
-  border: 1px solid #4d5d53;
-  margin: 1rem;
-  padding: 0.5rem;
-}
-
-.hero p {
-  margin: 0;
-  padding: 0 0.5rem;
-  font-size: 1rem;
-}
-
 .facebook {
   margin: 0.1rem auto;
   padding: 0;
@@ -396,17 +470,6 @@ footer iframe {
   background-color: #eef;
 }
 
-article ul,
-article dl {
-  /* margin: 2rem 1rem; */
-  padding-left: 1rem;
-  list-style-type: circle;
-}
-
-article dl dd {
-  margin-bottom: 0.5rem;
-}
-
 blockquote {
   background-color: #eed;
   border: 1px solid #4d5d53;
@@ -414,28 +477,26 @@ blockquote {
   padding: 1rem;
 }
 
-.img {
-  background-color: rgba(200, 200, 200, 0.5);
-  border: 1px solid #4d5d53;
-  margin: 1rem;
-  max-width: auto;
-  padding: 0.5rem;
-  text-align: center;
+figure {
+  background-color: rgba(250, 250, 250, 0.2);
+  border: 1px solid rgba(51,51,51,.5);
+  margin: 1rem 3rem;
+  /* max-width: auto; */
+  padding: .5rem 1rem;
+  /* text-align: center; */
   /* display: flex;
   flex-direction: column; */
 }
 
-.img p {
+figcaption {
   text-align: left;
-  margin: 1 rem 0;
+  margin: .5rem 0;
   padding: 0 2rem;
 }
 
 .gatsby-image-wrapper {
   display: block;
-  padding: 0.2rem;
-  max-width: 100%;
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 .gatsby-image-wrapper picture {
@@ -519,3 +580,55 @@ article .gps {
   opacity: 0.3;
   vertical-align: super;
 }
+
+.floatl {float:left; width:350px;} 
+.floatr {float:right; width:350px;} 
+
+.rec {margin:0; padding:0;}
+
+.rec::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.rec p {padding-top:3rem;position:relative;}
+
+.rec:nth-of-type(1) p::after {
+position:absolute;
+content:"2014";
+top:150%;
+left:60%;
+width:100%;
+height: 100%;
+font-size: 6rem;
+color:rgba(151,151,151,.7);
+transform: rotate(-20deg);
+font-weight: bold;
+}
+
+.rec:nth-of-type(2) p::after {
+  position:absolute;
+  content:"2017";
+  top:150%;
+  left:10%;
+  width:100%;
+  height: 100%;
+  font-size: 6rem;
+  color:rgba(151,151,151,.7);
+  transform: rotate(-20deg);
+  font-weight: bold;
+  }
+
+  .rec:nth-of-type(3) p::after {
+    position:absolute;
+    content:"2018";
+    top:150%;
+    left:60%;
+    width:100%;
+    height: 100%;
+    font-size: 6rem;
+    color:rgba(151,151,151,.7);
+    transform: rotate(-20deg);
+    font-weight: bold;
+    }

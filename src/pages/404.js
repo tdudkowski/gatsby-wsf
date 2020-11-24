@@ -28,18 +28,19 @@ const NotFoundPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Mapa strony albo 404" />
+      <SEO title="Strony nie znaleziono albo 404" />
       <article>
-        <h2>Mapa strony albo 404</h2>
-        <p>Strona, której szukasz nie istnieje.</p>
+        <h2>Strony nie znaleziono albo 404</h2>
+        <p>Strona, której szukasz nie istnieje pod tym adresem.</p>
+        <p>Albo została skasowana, albo ma zmienioną nazwę, albo jest przeniesiona - prawdopodobnie znajdziesz ją na <Link to="/mapa-strony"><strong>Mapie strony</strong></Link>; możesz też sprawdzić listę poniżej:</p>
         <section>
           <p>{data.site.siteMetadata.title}</p>
           <p>{data.allSitePage.nodes.filter(selectIt)}</p>
 
-          <ul>
+          <ul className="list404">
             {linksArray.map(el => (
               <li>
-                <Link to={el}>{el}</Link>
+                <Link to={`/${el}`}>{el}</Link>
               </li>
             ))}
           </ul>

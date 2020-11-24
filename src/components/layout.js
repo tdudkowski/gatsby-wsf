@@ -10,10 +10,13 @@ import React from "react"
 import Header from "./header"
 import Aside from "./aside"
 import Footer from "./footer"
+// import AsideComp from "./aside-comp"
+// import AsideMobile from "./aside-mobile"
 
 const Layout = ({ children }) => {
   return (
     <div className="container">
+      <Aside />
       <Header />
       <main>
         <Aside />
