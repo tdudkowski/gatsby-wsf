@@ -1,8 +1,10 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const GRH609D = () => (
+const GRH609D = ({ data }) => (
   <Layout>
     <SEO title="GRH 609 Division" />
     <article>
@@ -20,6 +22,11 @@ const GRH609D = () => (
         oddziałów formowanych z niedobitków.
       </p>
 
+      <figure className="figure">
+        <Img fluid={data.grh1.childImageSharp.fluid} alt="GRH 609 Division" />
+        <figcaption className="figure-caption"></figcaption>
+      </figure>
+
       <p>
         Jako grupa pasjonatów staramy się pielęgnować i zachować pamięć o
         wojennej i powojennej historii Wrocławia. Jesteśmy również członkami
@@ -34,8 +41,35 @@ const GRH609D = () => (
         wydarzenia mające miejsce na terenie Wrocławia od czasu ogłoszenia
         miasta twierdzą do czasu włączenia tych ziem do Rzeczypospolitej.
       </p>
+
+      <figure className="figure">
+        <Img fluid={data.grh2.childImageSharp.fluid} alt="GRH 609 Division" />
+        <figcaption className="figure-caption"></figcaption>
+      </figure>
+
     </article>
   </Layout>
 )
 
 export default GRH609D
+
+export const pageQuery = graphql`
+  query {
+    grh1: file(relativePath: { eq: "wsf-grh609-1.jpg" }) {
+      id
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    grh2: file(relativePath: { eq: "wsf-grh609-2.jpg" }) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+   }
+}
+`;
