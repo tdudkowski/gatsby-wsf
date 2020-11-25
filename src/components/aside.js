@@ -5,16 +5,14 @@ import NavbarLinks from "./navbarlinks"
 import styled from "styled-components"
 
 const Navigation = styled.nav`
-  @media (max-width: 768px) {
+  @media (max-width: 799px) {
     position: absolute;
     height: 8vh;
     top: 0;
     left: 0;
     right: 0;
     left: 0;
-    /* background-color:#fff; */
-    background-color: rgba(250, 250, 250, 0.4);
-  }
+      }
 `
 
 const Toggle = styled.div`
@@ -22,8 +20,10 @@ const Toggle = styled.div`
   height: 100%;
   cursor: pointer;
   padding: 0 10vw;
+  background-color: #333;
+  color: #ccc;
 
-  @media (max-width: 768px) {
+  @media (max-width: 799px) {
     display: flex;
   }
 `
@@ -33,18 +33,20 @@ const Navbox = styled.div`
   flex-direction: column;
   height: 100%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 799px) {
     position: absolute;
     /* top: 2rem; */
     width: 100%;
     justify-content: flex-start;
     transition: all 0.3s ease-in;
     left: ${props => (props.open ? "-100%" : "0")};
+    & h2, h3, ul {background-color: rgba(200,200,180,.9); font-size:1.3rem; }
+    & a:hover {background-color: rgba(200,200,150,.9); color:#552;}
   }
 `
 
 const Hamburger = styled.div`
-  background-color: #111;
+  background-color: #ccc;
   width: 30px;
   height: 3px;
   transition: all 0.3s linear;
@@ -56,7 +58,7 @@ const Hamburger = styled.div`
   ::after {
     width: 30px;
     height: 3px;
-    background-color: #111;
+    background-color: #ccc;
     content: "";
     position: absolute;
     transition: all 0.3s linear;
@@ -64,7 +66,7 @@ const Hamburger = styled.div`
 
   ::before {
     transform: ${props =>
-      props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
+    props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
     top: -10px;
   }
 
@@ -92,10 +94,10 @@ const Aside = () => {
             <NavbarLinks />
           </Navbox>
         ) : (
-          <Navbox open>
-            <NavbarLinks />
-          </Navbox>
-        )}
+            <Navbox open>
+              <NavbarLinks />
+            </Navbox>
+          )}
       </Navigation>
     </aside>
   )

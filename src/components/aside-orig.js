@@ -7,7 +7,7 @@ const Aside = () => (
     <h3>Komendantura</h3>
     <ul>
       <li>
-        <Link to="/">Strona główna</Link>
+        <Link to="/">Strona glówna</Link>
       </li>
       <li>
         <Link to="blog">Wydarzenia</Link>
@@ -16,7 +16,7 @@ const Aside = () => (
         <Link to="stowarzyszenie">Stowarzyszenie</Link>
       </li>
     </ul>
-    <h3>Załoga</h3>
+    <h3>Zaloga</h3>
     <ul>
       <li>
         <Link to="bohaterowie">Bohaterowie</Link>
@@ -43,7 +43,7 @@ const Aside = () => (
         <Link to="luftschutz-obrona-cywilna">Luftschutz / Obrona Cywilna</Link>
       </li>
       <li>
-        <Link to="slownik">Słowniczek forteczny</Link>
+        <Link to="slownik">Slowniczek forteczny</Link>
       </li>
       <li>
         <Link to="mapa-obiektow-fortyfikacyjnych">

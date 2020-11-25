@@ -29,45 +29,47 @@ const Page = ({ data }) => (
       </ul>
 
       <div className="rec">
-        <figure className="figure floatl">
+        <figure className="figure">
           <Img fluid={data.fortyfikacje.childImageSharp.fluid} alt="Publikacje - fortyfikacje" />
           <figcaption className="figure-caption">Pierwsze systematyczne opracowanie powstania i historii Twierdzy wilhelmińskiej.</figcaption>
         </figure>
-        <p>
-          W roku 2014 ukazały się "Fortyfikacje Festung Breslau", traktujące o umocnieniach wrocławskich począwszy od końca średniowiecza aż po budowę ostatnich schronów dla ludności cywilnej na początku lat 90' XX wieku.
+        <div>
+          <p>
+            W roku 2014 ukazały się "Fortyfikacje Festung Breslau", traktujące o umocnieniach wrocławskich począwszy od końca średniowiecza aż po budowę ostatnich schronów dla ludności cywilnej na początku lat 90' XX wieku.
 </p>
 
-        <ul>
-          <li>Wydawnictwo: Archiwum - System</li>
-          <li>Ilość stron: 376</li>
-          <li>Wymiary: 150 x 230</li>
-          <li>ISBN: 978-83-62809-33-2</li>
-        </ul>
-
+          <ul>
+            <li>Wydawnictwo: Archiwum - System</li>
+            <li>Ilość stron: 376</li>
+            <li>Wymiary: 150 x 230</li>
+            <li>ISBN: 978-83-62809-33-2</li>
+          </ul>
+        </div>
       </div>
       <div className="rec">
-        <figure className="figure floatr">
+        <figure className="figure">
           <Img fluid={data.monografia.childImageSharp.fluid} alt="Publikacje - monografia Twierdzy" />
           <figcaption className="figure-caption">Monografia Twierdzy.</figcaption>
         </figure>
-        <p> Po wielu latach kompleksowych prac badawczych, w roku 2017 ukazała się w końcu monografia naukowa twierdzy wilhelmińskiej.</p>
-        <ul>
-          <li>Wydawnictwo: Via Nova</li>
-          <li>Ilość stron: 176</li>
-          <li>Wymiary: 215 x 295</li>
-          <li>ISBN: 978-83-64025-35-8</li>
-        </ul>
-
+        <div>
+          <p> Po wielu latach kompleksowych prac badawczych, w roku 2017 ukazała się w końcu monografia naukowa twierdzy wilhelmińskiej.</p>
+          <ul>
+            <li>Wydawnictwo: Via Nova</li>
+            <li>Ilość stron: 176</li>
+            <li>Wymiary: 215 x 295</li>
+            <li>ISBN: 978-83-64025-35-8</li>
+          </ul>
+        </div>
       </div>
       <div className="rec">
-        <figure className="figure floatl">
+        <figure className="figure">
           <Img fluid={data.mapa.childImageSharp.fluid} alt="Publikacje - mapa fortyfikacja" />
           <figcaption className="figure-caption">Mapa wrocławskich obiektów fortyfikacyjnych.</figcaption>
         </figure>
-
-        <p>
-          W roku 2018 ukazała się mapa ukazująca większość budowli fortecznych i fortyfikacyjnych położonych na terenie Wrocławia.
-</p>
+        <div>
+          <p>
+            W roku 2018 ukazała się mapa ukazująca większość budowli fortecznych i fortyfikacyjnych położonych na terenie Wrocławia.
+</p></div>
       </div>
 
 

@@ -9,21 +9,22 @@ body {
   }
 
 p {
-  padding: 0.5rem 1rem;
-  margin: 0 2rem;
+  padding: .5rem;
+  margin: 0 .5rem;
+  padding-left:.5rem;
 }
 
 article ul, article ol {
- padding-left: 2rem;
-  margin: 0 3rem;
+ padding-left: .5rem;
+  margin: 0 .5rem;
   }
 
-  article ul {list-style-type: circle;}
+article ul {list-style-type: circle;}
 
 article dl {
   text-align: justify;
-  margin: 1rem 2rem;
-  padding:1rem;
+  margin: 1rem .5rem;
+  padding:.5rem;
   }
 
 a {
@@ -31,6 +32,32 @@ a {
   outline: 0;
   white-space: nowrap;
 }
+
+figure {
+  background-color: rgba(250, 250, 250, 0.2);
+  border: 1px solid rgba(51,51,51,.5);
+  margin: 1rem 1px;
+    padding: 2px;
+    /* max-width:300px; */
+  }
+
+figcaption {
+  text-align: left;
+  margin: .5rem 0;
+  padding: 0 2rem;
+}
+
+.gatsby-image-wrapper {
+  display: block;
+   box-sizing: border-box;
+}
+
+.gatsby-image-wrapper picture {
+  width: 95%;
+}
+
+.rec { margin: 1rem 1px; padding:2px; position: relative;}
+.rec div {padding:10px;}
 
 .no-link {
   pointer-events: none;
@@ -47,6 +74,7 @@ a {
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
 }
 
 header {
@@ -181,27 +209,12 @@ div.container > aside.menu-main {
   flex-direction: column;
   min-height: 8vh;
   height: 100%;
-  background: no-repeat url("../images/map1942-rozmycie.jpg");
-  background-size: cover;
-  /* background-color: #fff; */
+   background-color: #fff;
   z-index: 100;
 }
 
 main > aside.menu-main {
   display: none;
-}
-div.container > aside.menu-main > nav > div:nth-of-type(2) {
-  background: no-repeat url("../images/map1942-rozmycie.jpg");
-  background-size: cover;
-  background-color: #fff;
-}
-
-div.container > aside.menu-main > nav > div:nth-of-type(2) ul,
-div.container > aside.menu-main > nav > div:nth-of-type(2) h3 {
-  font-size: 1.6rem;
-  background: no-repeat url("../images/map1942-rozmycie.jpg");
-  background-size: cover;
-  background-color: #fff;
 }
 
 aside h2,
@@ -234,10 +247,12 @@ aside h3 {
   /* background-color: #fff; */
 }
 
-aside nav ul li a:hover {
-  /* background-color: #ddc; */
-  background-color: rgba(250, 250, 250, 0.3);
-  text-decoration: underline;
+.floatl { width:300px;clear:right; margin-right:auto;} 
+
+.rec::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 @media (min-width: 450px) {
@@ -249,15 +264,37 @@ aside nav ul li a:hover {
   .socialmedia {
     box-shadow: 0 0 3px rgba(200, 200, 20, 0.6);
   }
+  .floatl {float:left; width:350px; margin:1rem; padding:.5rem; margin-right:1rem;} 
+}
+
+@media (min-width: 700px) {
+
+  .rec {display:flex;}
+  .rec:nth-of-type(2) {flex-direction: row-reverse;}
+  .rec figure {flex-basis: 360px;}
+  .rec div {flex:1;}
+  .rec p {padding-top:1rem; margin:0;}
+
+ 
 }
 
 @media (min-width: 800px) {
   body {
   }
 
+  article ul, article ol {
+    padding-left: 2rem;
+     margin: 0 3rem;
+     }
+      
+   article dl {
+     text-align: justify;
+     margin: 1rem 2rem;
+     padding:1rem;
+     }
+ 
   .container {
-    /* flex-direction: ; */
-    margin-top: 1rem;
+       margin-top: 1rem;
     border-radius: 1.6rem 1.6rem 0 0;
     border-top: 1.5rem solid #222;
     border-width: 1.5rem 0 0 0;
@@ -323,7 +360,7 @@ aside nav ul li a:hover {
   }
 
   aside {
-    background-image: url("../images/map1942-rozmycie.jpg");
+    background-image: url("../images/map1942-light.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -353,10 +390,13 @@ aside nav ul li a:hover {
     user-select: none;
     font-size: 1.2rem;
     font-weight: normal;
+    background-color: rgba(250,250,250,.8);
   }
 
-  aside a:hover {
+  aside ul > li > a:hover {
     text-decoration: underline;
+    background-color: rgba(250,250,220,.8);
+    color: #552;
   }
 
   aside h2 {
@@ -369,6 +409,7 @@ aside nav ul li a:hover {
     padding: 0.5rem;
     border: 1px solid gray;
     margin:.5rem 1rem;
+    ;
   }
 
   aside h3 {
@@ -382,6 +423,7 @@ aside nav ul li a:hover {
     padding-right: 2rem;
     border: 1px solid #ddd;
     border-width: 1px 0;
+    background-color: rgba(250,250,250,.8)
   }
 
   aside .hero {
@@ -415,6 +457,55 @@ aside nav ul li a:hover {
   article {
     flex: 1;
   }
+
+  figure {
+    margin: .5rem;
+  padding: 10px;
+    }
+
+    p {
+      padding: 0.5rem 1rem;
+      margin: 0 2rem;
+    }
+
+  .rec:nth-of-type(1) p::after {
+  position:absolute;
+  content:"2014";
+  top:35%;
+  left:60%;
+  width:100%;
+  height: 100%;
+  font-size: 6rem;
+  color:rgba(151,151,151,.7);
+  transform: rotate(-20deg);
+  font-weight: bold;
+  }
+  
+  .rec:nth-of-type(2) p::after {
+    position:absolute;
+    content:"2017";
+    top:35%;
+    left:10%;
+    width:100%;
+    height: 100%;
+    font-size: 6rem;
+    color:rgba(151,151,151,.7);
+    transform: rotate(-20deg);
+    font-weight: bold;
+    }
+  
+    .rec:nth-of-type(3) p::after {
+      position:absolute;
+      content:"2018";
+      top:35%;
+      left:60%;
+      width:100%;
+      height: 100%;
+      font-size: 6rem;
+      color:rgba(151,151,151,.7);
+      transform: rotate(-20deg);
+      font-weight: bold;
+      }
 }
 
 @media (min-width: 1024px) {
@@ -475,32 +566,6 @@ blockquote {
   border: 1px solid #4d5d53;
   margin: 1rem 2rem;
   padding: 1rem;
-}
-
-figure {
-  background-color: rgba(250, 250, 250, 0.2);
-  border: 1px solid rgba(51,51,51,.5);
-  margin: 1rem 3rem;
-  /* max-width: auto; */
-  padding: .5rem 1rem;
-  /* text-align: center; */
-  /* display: flex;
-  flex-direction: column; */
-}
-
-figcaption {
-  text-align: left;
-  margin: .5rem 0;
-  padding: 0 2rem;
-}
-
-.gatsby-image-wrapper {
-  display: block;
-   box-sizing: border-box;
-}
-
-.gatsby-image-wrapper picture {
-  width: 95%;
 }
 
 footer hr {
@@ -581,54 +646,3 @@ article .gps {
   vertical-align: super;
 }
 
-.floatl {float:left; width:350px;} 
-.floatr {float:right; width:350px;} 
-
-.rec {margin:0; padding:0;}
-
-.rec::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.rec p {padding-top:3rem;position:relative;}
-
-.rec:nth-of-type(1) p::after {
-position:absolute;
-content:"2014";
-top:150%;
-left:60%;
-width:100%;
-height: 100%;
-font-size: 6rem;
-color:rgba(151,151,151,.7);
-transform: rotate(-20deg);
-font-weight: bold;
-}
-
-.rec:nth-of-type(2) p::after {
-  position:absolute;
-  content:"2017";
-  top:150%;
-  left:10%;
-  width:100%;
-  height: 100%;
-  font-size: 6rem;
-  color:rgba(151,151,151,.7);
-  transform: rotate(-20deg);
-  font-weight: bold;
-  }
-
-  .rec:nth-of-type(3) p::after {
-    position:absolute;
-    content:"2018";
-    top:150%;
-    left:60%;
-    width:100%;
-    height: 100%;
-    font-size: 6rem;
-    color:rgba(151,151,151,.7);
-    transform: rotate(-20deg);
-    font-weight: bold;
-    }

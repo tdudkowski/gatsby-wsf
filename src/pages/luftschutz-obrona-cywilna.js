@@ -27,7 +27,7 @@ Reichs Luftschutzbund. Nieco wcześniej zaczęto przygotowywać pierwsze przedsi
 
       <p>W październiku roku 1940 wszedł w życie Führer LS - Sofortprogramm w ramach którego w miastach zagrożonych nalotem zaczęto projektować i wznosić schrony wielkokubaturowe. Budowa tego typu obiektów trwała we Wrocławiu aż do roku 1944.</p>
 
-      <p>Już od 1943 roku Niemcy zaczęły doświadczać coraz cięższych nalotów dokonywanych przez lotnictwo alianckie.Skutkiem tych działań była intensyfikacja działań przy budowie kolejnych urządzeń schronowych - powróciła koncepcja masowej budowy szczelin przeciwlotniczych z prefabrykatów. Pod koniec wojny szczeliny przeciwlotnicze ulegały dalszym uproszczeniom, zaczęto także budować prowizoryczne rowy przeciwodłamkowe.</p>
+      <p>Już od 1943 roku Niemcy zaczęły doświadczać coraz cięższych nalotów dokonywanych przez lotnictwo alianckie. Skutkiem tych działań była intensyfikacja działań przy budowie kolejnych urządzeń schronowych - powróciła koncepcja masowej budowy szczelin przeciwlotniczych z prefabrykatów. Pod koniec wojny szczeliny przeciwlotnicze ulegały dalszym uproszczeniom, zaczęto także budować prowizoryczne rowy przeciwodłamkowe.</p>
 
       <p>Konieczność użytkowania schronów była z pewnością trudnym elementem dnia codziennego w wojennej rzeczywistości. W schronach na stosunkowo niewielkiej przestrzeni przebywały stłoczone dziesiątki osób, często uciekając z mieszkań wraz z najcenniejszym dobytkiem. Chociaż duża część budowli ochronnych posiadała węzły sanitarne i mechaniczną wentylację, to przebywanie w większości schronów nie należało do komfortowych.</p>
 
